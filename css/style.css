@@ -396,7 +396,7 @@ nav button{
   height: 68.4vh;
   background-color: green;
 }
-.zeroContainer{
+#zeroContainer{
   width: 51.9vw;
   height: 109.8vh;
   position: relative;
@@ -472,10 +472,68 @@ nav button{
 /* #WRH{
   display: none;
 } */
+#WRH{
+  display: none;
+}
 .WRHBox{
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 53.5vw;
+  height: 311vh;
+  left: 19.4vw;
   margin-bottom: 9.07vh;
+  background-color: navy;
+}
+#WRHBox_1{
+  width: 38.5vw;
+  height: 94.4vh;
   background-color: lightblue;
+}
+#WRHCorntainer{
+  position: relative;
+  width: 53.5vw;
+  height: 138.2vh;
+  background-color: green;
+}
+#WRHBox_2{
+  position: absolute;
+  width:24.2vw ;
+  height: 66vh;
+  left: 0;
+  top: 0;
+  background-color: yellow;
+}
+#WRHBox_3{
+  position: absolute;
+  width:24.4vw ;
+  height: 66.8vh;
+  right: 1.6vh;
+  top: 19.2vh;
+  background-color: yellow;
+}
+#WRHBox_4{
+  position: absolute;
+  width:24.2vw ;
+  height: 66vh;
+  left: 0;
+  bottom: 0;
+  background-color: yellow;
+}
+#WRHBox_5{
+  position: absolute;
+  width:17.3vw ;
+  height: 47.3vh;
+  right: 8.7vw;
+  bottom: 0;
+  background-color: yellow;
+}
+#WRHBox_6{
+  width: 53.5vw;
+  height: 65vh;
+  background-color: hotpink;
 }
 /* kuchnia poznan stles elements */
 #kuchniaPoznan{
@@ -483,8 +541,58 @@ nav button{
 }
 .kuchniaPoznanBox{
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 52.3vw;
+  height: 241.3vh;
+  left: 17.5vw;
   margin-bottom: 9.07vh;
-  background-color: lightblue;
+  background-color: navy;
+}
+#kuchniaPoznanBox_1{
+  width: 34.8vw;
+  height: 95.1vh;
+  background-color: purple;
+}
+#kuchniaPoznanContainer{
+  position: relative;
+  width: 52.3vw;
+  height: 141.2vh;
+  background-color: purple;
+}
+#kuchniaPoznanBox_2{
+  position: absolute;
+  width: 25.1vw;
+  height: 68.7vh;
+  left: 0;
+  top: 0;
+  background-color: green;
+}
+#kuchniaPoznanBox_3{
+  position: absolute;
+  width: 25.1vw;
+  height: 68.7vh;
+  right: 0;
+  top: 12.3vh;
+  background-color: green;
+}
+#kuchniaPoznanBox_4{
+  position: absolute;
+  width: 25.1vw;
+  height: 68.7vh;
+  left: 0;
+  bottom: 0;
+  background-color: green;
+}
+#kuchniaPoznanBox_5{
+  position: absolute;
+  width: 17.1vw;
+  height: 46.7vh;
+  right: 8vw;
+  bottom: 8.3vh;
+  background-color: green;
 }
 /* kwiaty poslkie stles elements */
 #kwiatyPolskie{
@@ -492,8 +600,62 @@ nav button{
 }
 .kwiatyPolskieBox{
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 55.7vw;
+  height: 254.5vh;
+  left: 15.8vw;
   margin-bottom: 9.07vh;
-  background-color: lightblue;
+  background-color: navy;
+}
+#kwiatyPolskieBox_1{
+  width: 35.1vw;
+  height: 95.9vh;
+  background-color: pink;
+}
+#kwiatyPolskieContainer{
+  position: relative;
+  width: 55.7vw;
+  height: 153.7vh;
+  background-color: purple;
+}
+#kwiatyPolskieBox_2{
+  position: absolute;
+  width: 43.8vw;
+  height: 53.3vh;
+  left: -15.8vw;
+  top: 0;
+  background-color: pink;
+}
+#kwiatyPolskieBox_3{
+  position: absolute;
+  width: 24.9vw;
+  height: 68.1vh;
+  right: 0;
+  top: 19.6vh;
+  background-color: pink;
+}
+#kwiatyPolskieBox_4{
+  position: absolute;
+  width: 28vw;
+  height: 76.7vh;
+  left: 0;
+  bottom: 19vh;
+  background-color: pink;
+}
+#kwiatyPolskieBox_5{
+  position: absolute;
+  width: 21.9vw;
+  height: 59.9vh;
+  right: 3vw;
+  bottom: 0;
+  background-color: pink;
+}
+/* coolgardie styles elements */
+#coolgardie{
+  display: none;
 }
 /* brama poznania stles elements */
 #bramaPoznania{
@@ -501,8 +663,45 @@ nav button{
 }
 .bramaPoznaniaBox{
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 50.1vw;
+  height: 165.5vh;
+  left: 19.7vw;
   margin-bottom: 9.07vh;
-  background-color: lightblue;
+  background-color: navy;
+}
+#bramaPoznaniaBox_1{
+  width: 50.1vw;
+  height: 60.9vh;
+  background-color: pink;
+}
+#bramaPoznaniaBox_2{
+  width: 50.1vw;
+  height: 60.9vh;
+  background-color: pink;
+}
+#bramaPoznaniaContainer{
+  width: 50.1vw;
+  height: 37.3vh;
+  position: relative;
+  background-color: pink;
+}
+#bramaPoznaniaBox_3{
+  position: absolute;
+  width: 30.7vw;
+  height: 37.3vh;
+  left: -13.1vw;
+  background-color: grey;
+}
+#bramaPoznaniaBox_4{
+  position: absolute;
+  width: 30.7vw;
+  height: 37.3vh;
+  right: 0;
+    background-color: grey;
 }
 /* berlin stles elements */
 #berlin{
@@ -510,6 +709,56 @@ nav button{
 }
 .berlinBox{
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 50.9vw;
+  height: 298.1vh;
+  left: 18.9vw;
   margin-bottom: 9.07vh;
-  background-color: lightblue;
+  background-color: navy;
+}
+#berlinBox_1{
+  width: 34.5vw;
+  height: 94.3vh;
+  background-color: pink;
+}
+#berlinContainer{
+  width: 50.9vw;
+  height: 148.8vh;
+  position: relative;
+  background-color: pink;
+}
+.berlinContainer_Box{
+  position: absolute;
+  width: 24.2vw;
+  height: 66.2vh;
+  background-color: brown;
+}
+#berlinBox_2{
+  left: 0;
+  top: 0;
+}
+#berlinBox_3{
+  right: 0;
+  top: 11.8vh;
+}
+#berlinBox_4{
+  left: 0;
+  bottom: 11.8vh;
+}
+#berlinBox_5{
+  right: 0;
+  bottom: 0;
+}
+#berlinBox_6{
+  width: 35.1vw;
+  height: 42.7vh;
+  margin-left: 15.8vw;
+  background-color: pink;
+}
+/* air-water-soil styles elements */
+#airWaterSoil{
+  display: none
 }
