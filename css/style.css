@@ -1,97 +1,515 @@
 *{
-margin: 0;
-padding: 0;
-font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', Helvetica, sans-serif;
+  box-sizing: border-box;
 }
-main{
-  margin-top: 3%;
-  display: flex;
+body{
+  background-color: yellow;
 }
-/* STYLOWANIE DLA ELEMENTÓW MENU BOCZNEGO */
-header{
-  display: flex;
-  flex-direction: column;
+.navContainer{
+  margin-left: 5vw;
+  position: fixed;
+  background-color: blue;
+  width: 11.5vw;
+  height: 81.61vh;
 }
 .logo{
-  background-image: url("../images/Logo.png");
-  width: 200px;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: inline-block;
+  background-color: white;
+  width: 11.5vw;
+  height: 25.55vh;
 }
-.conact_info{
-  width: 200px;
-  display: inline-block;
-  text-transform:uppercase;
-  padding-left: 40px;
-  padding-top: 30px;
-  font-size: 0.8rem
+.hiContainer{
+  background-color: pink;
+  width: 11.5vw;
+  height: 11.72vh;
+  padding-left: .8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.conact_info p{
-  padding: 10px 0;
-}
-#one{
-  letter-spacing: 4px;
-  padding: 0px;
-}
-#two{
-  padding: 0 0 30px 0px;
-}
-.menu {
-  width: 200px;
-  display: inline-block;
+.hiContainer p{
+  font-size: .86vw;
   text-transform: uppercase;
-  padding-left: 40px;
-  padding-top: 30px;
+  line-height: 2.7vh;
 }
-li{
-  list-style: none;
-  padding: 10px 0;
+.hiContainer p span{
+  letter-spacing: .23vw
 }
-a{
-  text-decoration: none;
-  color: inherit;
-  position: relative;
-  left: 25px;
-  font-size: .9rem
+.adressContainer{
+  background-color: lightblue;
+  width: 11.5vw;
+  height: 12.73vh;
+  padding-left: .8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.adressContainer p{
+  text-transform: uppercase;
+  font-size: .86vw;
+}
+.buttonsContairner{
+  background-color: orange;
+  width: 11.5vw;
+  height: 31.82vh;
+  padding: 5.9vh 0 5.9vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.buttonsContairner button{
+  font-size: 1vw;
+  text-transform: uppercase;
+  height: 45vh;
+  width: 11.5vw;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .cross{
   position: relative;
+  width: 1.6vw;
+  height: 3.2vh;
+  margin-right: 2vh
 }
 .cross_horizontal{
-  width: 1.2rem;
-  height: 1px;
+  width: 1.6vw;
+  height: .3vh;
   background-color: black;
   position: absolute;
   position: absolute;
-  top: .6rem;
+  top: 1.4vh;
 }
 .cross_vertical{
   position: absolute;
-  width: 1px;
-  height: 1.2rem;
-  left:.6rem;
+  width: .1vw;
+  height: 3.2vh;
+  left:.75vw;
   background-color: black;
   position: absolute;
 }
-.main_image{
-  background-image: url("../images/Main_image.jpg");
-  width: 600px;
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin: 2% 0 0 20%;
+#landing{
+  display: none;
 }
-/* STYLOWANIE STRON NA ZCAS OPRACOWANIA USUNĄĆ PO ZAKOŃCZENIU */
-.center{
-  margin-left: 40%;
+.landing{
+  margin: 9.07vh 0 0 21.5vw;
+  background-color: green;
+  width: 73.5vw;
+  height: 81.61vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.budowa{
-  margin-left: -90px;
-  width: 400px;
-  text-align: center;
+.landingImg{
+  width: 43.5vw;
+  height: 60.5vh;
+  background-color: yellow;
+}
+nav{
+  margin: 9.07vh 0 0 21.5vw;
+  background-color: green;
+  width: 73.5vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+nav button{
+  border: none;
+}
+.buttonsRow{
+  width: 59.4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3.8vh
+}
+.verticalImg{
+  width: 8.5vw;
+  height: 23.3vh;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.horizontalImg{
+  width: 12.8vw;
+  height: 15.5vh;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* IKONY GŁÓWJE NAWIGACJI NA PODSTRONIE PRODUCTS */
+#przesunieteNav{
+  background-image: url("../images/przesuniete/");
+}
+#kozNav{
+  background-image: url("../images/koz/");
+}
+#siostryNav{
+  background-image: url("../images/siostry/");
+}
+#barlinekNav{
+  background-image: url("../images/barlinek/");
+}
+#cosNav{
+  background-image: url("../images/cos/");
+}
+#skladNav{
+  background-image: url("../images/sklad/");
+}
+#zeroKithcenNav{
+  background-image: url("../images/zero_kitchen/");
+}
+#lucynaNav{
+  background-image: url("../images/lucyna/");
+}
+#WRHNav{
+  background-image: url("../images/WRH/");
+}
+#kuchniaPoznanNav{
+  background-image: url("../images/kuchnia_poznan/");
+}
+#kwiatyPolskieNav{
+  background-image: url("../images/kwiaty_poslkie/");
+}
+#bramaPoznaniaNav{
+  background-image: url("../images/");
+}
+#Nav{
+  background-image: url("../images/");
+}
+#berlinNav{
+  background-image: url("../images/berlin/");
+}
+
+
+.containerSections{
+  margin: 9.07vh 0 9.07vh 21.5vw;
+  background-color: green;
+  width: 73.5vw;
+  /* height: 243.5vh; */
+  position: relative;
+}
+.opis{
+  width: 17vw;
+  height: 17.1vh;
+  position: absolute;
+  left:-2.5vw;
+  top: 56.9vh;
+  background-color: orange
+}
+.tytuł{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding-bottom: 2.3vh;
+}
+.tytuł h2{
+  font-size: 1vw;
+  font-weight: 400;
+}
+.opis p{
+  font-size: 0.64vw;
+  text-align: justify;
+  line-height: 2vh;
+  padding-left: 2.5vw
+}
+/* przesunieten elements styles */
+#przesuniete{
+  display: none;
+}
+.przesunieteBox{
+  width: 24.9vw;
+  height: 67.72vh;
+  background-color: lightblue;
+  margin-bottom: 9.07vh;
+  position: absolute;
+}
+#przesBox_1{
+  width: 35.7vw;
+  height: 97.1vh;
+  left: 25.4vw;
+}
+#przesBox_2{
+  top: 102.6vh;
+  left: 19.3vw;
+}
+#przesBox_3{
+  top:175.8vh;
+  left: 19.3vw;
+}
+#przesBox_4{
+  top: 155.7vh;
+  left: -8.6vw
+}
+#przesBox_5{
+  top: 122.7vh;
+  left: 47.2vw
+}
+/* koz styles components */
+#koz{
+  display: none;
+}
+/* siostry styles components */
+#siostry{
+  display: none;
+}
+.siostryBox{
+  position: absolute;
+  margin-bottom: 9.07vh
+}
+#siostryBox_1{
+  left: 19.5vw;
+  top: 4.4vh;
+  width: 53.7vw;
+  height: 94.6vh;
+  background-color: navy;
+  z-index: 1
+}
+#siostryBox_2{
+  left: 19.6vw;
+  top: 96.2vh;
+  width: 56.1vw;
+  height: 101.4vh;
+  background-color: navy;
+  z-index: 1
+}
+#siostryBox_3{
+  left: 0;
+  top: 103.8vh;
+  width: 25.9vw;
+  height: 68.1vh;
+  z-index: 2;
+  background-color: lightgreen
+}
+#siostryBox_4{
+  left: 0;
+  top: 174.9vh;
+  width: 25.9vw;
+  height: 38.1vh;
+  z-index: 2;
+    background-color: lightgreen
+}
+/* barlinek stles elements */
+
+#barlinek{
+  display: none
+}
+.barlinekBox{
+  position: absolute;
+  margin-bottom: 9.07vh;
+  background-color: lightblue
+}
+#barlinekBox_1{
+  left: 18.6vw;
+  top: 6.5vh;
+  width: 25.8vw;
+  height: 55.8vh;
+}
+#barlinekBox_2{
+  left: 46.2vw;
+  top: 17.4vh;
+  width: 20.1vw;
+  height: 44.9vh;
+}
+#barlinekBox_3{
+  left: 18.6vw;
+  top: 65.6vh;
+  width: 54.5vw;
+  height: 36.7vh;
+}
+/* cos stles elements */
+#cos{
+  display: none;
+}
+.cosBox{
+  position: absolute;
+  margin-bottom: 9.07vh;
+  background-color: lightblue;
+}
+#cosBox_1{
+  left: 27.9vw;
+  top: 11.7vh;
+  width: 29.3vw;
+  height: 65.1vh;
+}
+#cosBox_2{
+  left: 10.3vw;
+  top: 96.3vh;
+  width: 54.9vw;
+  height: 143vh;
+}
+/* sklad stles elements */
+#sklad{
+  display: none;
+}
+.skladBox{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 43.2vw;
+  height: 173.6vh;
+  left: 24.3vw;
+  background-color: orange;
+  margin-bottom: 9.07vh;
+}
+#skladBox_1{
+  width: 43.2vw;
+  height: 52.5vh;
+  background-color: lightblue;
+}
+#skladBox_2{
+  width: 43.2vw;
+  height: 52.5vh;
+  background-color: lightblue;
+}
+#skladBox_3{
+  width: 20vw;
+  height: 54.7vh;
+  background-color: blue;
+}
+/* zero kitchen stles elements */
+#zeroKitchen{
+  display: none;
+}
+.zeroKitchenBox{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 51.9vw;
+  height: 238.5vh;
+  left: 19.2vw;
+  margin-bottom: 9.07vh;
+  background-color: navy;
+}
+#zeroBox_1{
+  width: 51.9vw;
+  height: 68.4vh;
+  background-color: green;
+}
+.zeroContainer{
+  width: 51.9vw;
+  height: 109.8vh;
+  position: relative;
+  background-color: grey
+}
+#zeroBox_2{
+  position: absolute;
+  width: 23.1vw;
+  height: 63.8vh;
+  background-color: pink;
+  top: 0;
+  left: 0;
+}
+#zeroBox_3{
+  position: absolute;
+  width: 23.1vw;
+  height: 27.9vh;
+  background-color: pink;
+  bottom: 13.1vh;
+  left: 0;
+}
+#zeroBox_4{
+  position: absolute;
+  width: 26.4vw;
+  height: 72.9vh;
+  background-color: pink;
+  top: 0;
+  right: 0;
+}
+#zeroBox_5{
+  position: absolute;
+  width: 26.4vw;
+  height: 31.9vh;
+  background-color: pink;
+  bottom: 0;
+  right: 0;
+}
+#zeroBox_6{
+  width: 41.8vw;
+  height: 50.4vh;
+  background-color: white;
+}
+/* lucyna stles elements */
+#lucyna{
+  display: none;
+}
+.lucynaBox{
+  position: absolute;
+  margin-bottom: 9.07vh;
+  background-color: lightblue;
+}
+#lucynaBox_1{
+  width: 37.3vw;
+  height: 96.2vh;
+  left: 26.5vw;
+  background-color: lightblue
+}
+#lucynaBox_2{
+  width: 44.6vw;
+  height: 49.6vh;
+  top: 103vh;
+  left: 22.2vw;
+  background-color: lightblue
+}
+#lucynaBox_3{
+  width: 41.4vw;
+  height: 74.8vh;
+  left: 28.1vw;
+  top: 154.5vh;
+  background-color: lightblue
+}
+/* wrh stles elements */
+/* #WRH{
+  display: none;
+} */
+.WRHBox{
+  position: absolute;
+  margin-bottom: 9.07vh;
+  background-color: lightblue;
+}
+/* kuchnia poznan stles elements */
+#kuchniaPoznan{
+  display: none;
+}
+.kuchniaPoznanBox{
+  position: absolute;
+  margin-bottom: 9.07vh;
+  background-color: lightblue;
+}
+/* kwiaty poslkie stles elements */
+#kwiatyPolskie{
+  display: none;
+}
+.kwiatyPolskieBox{
+  position: absolute;
+  margin-bottom: 9.07vh;
+  background-color: lightblue;
+}
+/* brama poznania stles elements */
+#bramaPoznania{
+  display: none;
+}
+.bramaPoznaniaBox{
+  position: absolute;
+  margin-bottom: 9.07vh;
+  background-color: lightblue;
+}
+/* berlin stles elements */
+#berlin{
+  display: none;
+}
+.berlinBox{
+  position: absolute;
+  margin-bottom: 9.07vh;
+  background-color: lightblue;
 }
