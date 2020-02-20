@@ -255,6 +255,75 @@ nav button{
 #koz{
   display: none;
 }
+.kozBox{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 70.4vw;
+  height: 421.4vh;
+  left: 3.9vw;
+  margin-bottom: 9.07vh;
+  background-color: navy;
+}
+#kozBox_1{
+  width: 38.3vw;
+  height: 99.2vh;
+  background-color: green;
+  margin-left: 21.9vw;
+}
+#kozBox_2{
+  width: 54.4vw;
+  height: 69.8vh;
+  background-color: green;
+  margin-left: 12.6vw;
+}
+#kozContainer{
+  position: relative;
+  width: 70.4vw;
+  height: 165.5vh;
+  background-color: green;
+}
+#kozBox_3{
+  position: absolute;
+  width: 37vw;
+  height: 96.2vh;
+  top: 0;
+  left: 0;
+  background-color: pink;
+}
+#kozBox_4{
+  position: absolute;
+  width: 26.7vw;
+  height: 69.6vh;
+  top: 35.2vh;
+  right: 3.4vw;
+  background-color: pink;
+
+}
+#kozBox_5{
+  position: absolute;
+  width: 28.1vw;
+  height: 51.3vh;
+  left: 9vw;
+  bottom: 11vh;
+  background-color: pink;
+}
+#kozBox_6{
+  position: absolute;
+  width: 30vw;
+  height: 54.6vh;
+  right: 0;
+  bottom: 0;
+  background-color: pink;
+}
+#kozBox_7{
+  width: 49.7vw;
+  height: 64vh;
+  margin-left: 14.2vw;
+  background-color: green
+}
 /* siostry styles components */
 #siostry{
   display: none;
@@ -657,6 +726,50 @@ nav button{
 #coolgardie{
   display: none;
 }
+.coolgardieBox{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 58.2vw;
+  height: 210.6vh;
+  left: 18.2vw;
+  margin-bottom: 9.07vh;
+  background-color: navy;
+}
+#coolgardieBox_1{
+  width: 55.9vw;
+  height: 87.2vh;
+  margin-left: 2.4vw;
+  background-color: pink
+}
+#coolgardieContainer{
+  width: 56.2vw;
+  height: 47.5vh;
+  position: relative;
+  background-color: pink;
+}
+#coolgardieBox_2{
+  position: absolute;
+  width:19.1vw;
+  height: 47.5vh;
+  left: 0;
+  background-color: green;
+}
+#coolgardieBox_3{
+  position: absolute;
+  width:35.4vw;
+  height: 36vh;
+  right: 0;
+  bottom: 0;
+  background-color: green;
+}
+#coolgardieBox_4{
+  width: 56.2vw;
+  height: 69.1vh;
+  background-color: pink;
+}
 /* brama poznania stles elements */
 #bramaPoznania{
   display: none;
@@ -759,6 +872,68 @@ nav button{
   background-color: pink;
 }
 /* air-water-soil styles elements */
-#airWaterSoil{
+/* #airWaterSoil{
   display: none
+} */
+.airWaterSoilBox{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 51.8vw;
+  height: 293vh;
+  left: 21.6vw;
+  margin-bottom: 9.07vh;
+  background-color: navy;
+}
+#airWaterSoilBox_1{
+  width:29.8vw;
+  height: 75.1vh;
+  margin-left: 10.1vw;
+  background-color: pink;
+}
+#airWaterSoilContainer{
+  width: 51.8vw;
+  height: 150.6vh;
+  position: relative;
+  background-color: pink;
+}
+#airWaterSoilBox_2{
+  position: absolute;
+  width: 25.2vw;
+  height: 68.6vh;
+  top: 0;
+  left: 0;
+  background-color: green;
+}
+#airWaterSoilBox_3{
+  position: absolute;
+  width: 24.9vw;
+  height: 68.6vh;
+  top: 10.5vh;
+  right: 0;
+  background-color: green;
+}
+#airWaterSoilBox_4{
+  position: absolute;
+  width: 25.2vw;
+  height: 68.6vh;
+  bottom: 9.6vh;
+  left: 0;
+  background-color: green;
+}
+#airWaterSoilBox_5{
+  position: absolute;
+  width: 24.9vw;
+  height: 68.6vh;
+  bottom: 0;
+  right: 0;
+  background-color: green;
+}
+#airWaterSoilBox_6{
+  width:46.3vw;
+  height: 56.7vh;
+  margin-left: 2vw;
+  background-color: pink;
 }
