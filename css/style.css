@@ -4,23 +4,22 @@
   font-family: 'Lato', Helvetica, sans-serif;
   box-sizing: border-box;
 }
-body{
-  background-color: yellow;
-}
 .navContainer{
   margin-left: 5vw;
   position: fixed;
-  background-color: blue;
   width: 11.5vw;
   height: 81.61vh;
 }
 .logo{
-  background-color: white;
-  width: 11.5vw;
-  height: 25.55vh;
+  background-image: url("../images/logo.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: white; */
+  width: 15.5vw;
+  height: 31vh;
 }
 .hiContainer{
-  background-color: pink;
   width: 11.5vw;
   height: 11.72vh;
   padding-left: .8vw;
@@ -37,7 +36,6 @@ body{
   letter-spacing: .23vw
 }
 .adressContainer{
-  background-color: lightblue;
   width: 11.5vw;
   height: 12.73vh;
   padding-left: .8vw;
@@ -50,7 +48,6 @@ body{
   font-size: .86vw;
 }
 .buttonsContairner{
-  background-color: orange;
   width: 11.5vw;
   height: 31.82vh;
   padding: 5.9vh 0 5.9vh 0;
@@ -68,6 +65,8 @@ body{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background: none;
+  border: none;
 }
 .cross{
   position: relative;
@@ -96,7 +95,6 @@ body{
 }
 .landing{
   margin: 9.07vh 0 0 21.5vw;
-  background-color: green;
   width: 73.5vw;
   height: 81.61vh;
   display: flex;
@@ -106,18 +104,20 @@ body{
 .landingImg{
   width: 43.5vw;
   height: 60.5vh;
-  background-color: yellow;
+  background-image: url("../images/landing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:
 }
 nav{
-  margin: 9.07vh 0 0 21.5vw;
-  background-color: green;
+  margin: 9.07vh 0 9.07vh 21.5vw;
   width: 73.5vw;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  display: none;
+  /* display: none; */
 }
 nav button{
   border: none;
@@ -131,60 +131,63 @@ nav button{
 }
 .verticalImg{
   width: 8.5vw;
-  height: 23.3vh;
-  background-color: white;
+  height: calc(8.5vw * 1.5);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .horizontalImg{
   width: 12.8vw;
-  height: 15.5vh;
-  background-color: grey;
+  height: calc(12.8vw / 1.5);
   background-repeat: no-repeat;
   background-size: contain;
 }
 /* IKONY GŁÓWJE NAWIGACJI NA PODSTRONIE PRODUCTS */
 #przesunieteNav{
-  background-image: url("../images/przesuniete/");
+  background-image: url("../images/navigation_icons/przesuniete.jpg");
 }
 #kozNav{
-  background-image: url("../images/koz/");
+  background-image: url("../images/navigation_icons/koz.jpg");
 }
 #siostryNav{
-  background-image: url("../images/siostry/");
+  background-image: url("../images/navigation_icons/siostry.jpg");
 }
 #barlinekNav{
-  background-image: url("../images/barlinek/");
+  background-image: url("../images/navigation_icons/barlinek.jpg");
 }
 #cosNav{
-  background-image: url("../images/cos/");
+  background-image: url("../images/navigation_icons/cos.jpg");
 }
 #skladNav{
-  background-image: url("../images/sklad/");
+  background-image: url("../images/navigation_icons/sklad.jpg");
 }
 #zeroKithcenNav{
-  background-image: url("../images/zero_kitchen/");
+  background-image: url("../images/navigation_icons/zeroKitchen.jpg");
 }
 #lucynaNav{
-  background-image: url("../images/lucyna/");
+  background-image: url("../images/navigation_icons/lucyna.jpg");
 }
 #WRHNav{
-  background-image: url("../images/WRH/");
+  background-image: url("../images/navigation_icons/WRH.jpg");
 }
 #kuchniaPoznanNav{
-  background-image: url("../images/kuchnia_poznan/");
+  background-image: url("../images/navigation_icons/poznanKitchen.jpg");
 }
 #kwiatyPolskieNav{
-  background-image: url("../images/kwiaty_poslkie/");
+  background-image: url("../images/navigation_icons/kwiatyPolskie.jpg");
+}
+#coolgardieNav{
+  background-image: url("../images/navigation_icons/coolgardie.jpg");
 }
 #bramaPoznaniaNav{
-  background-image: url("../images/");
-}
-#Nav{
-  background-image: url("../images/");
+  background-image: url("../images/navigation_icons/bramaPoznania.jpg");
 }
 #berlinNav{
-  background-image: url("../images/berlin/");
+  background-image: url("../images/navigation_icons/berlin.jpg");
+}
+#airWaterSoilNav{
+  background-image: url("../images/navigation_icons/");
+  background: transparent
 }
 
 
@@ -872,9 +875,9 @@ nav button{
   background-color: pink;
 }
 /* air-water-soil styles elements */
-/* #airWaterSoil{
+#airWaterSoil{
   display: none
-} */
+}
 .airWaterSoilBox{
   position: absolute;
   display: flex;
